@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg-color: #e7eff2;
+    --accent-color: #25b486;
+    --accent-color-dark: #218968;
+    --primary-text-color: #333;
+    --secondary-text-color: #ffffff;
+    --border-color: #ddd;
+    --border-radius: 0.25rem;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(color--primary-text-);   
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 90%;
+    max-width: 1180px;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+main .main-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+main .main-left img{
+    width: 80%
+}
+
+.divider {
+    width: 1px;
+    border-left: 0.3px solid rgb(209, 209, 209);
+    box-shadow: #c4c4c4 0 0 1px;
+    opacity: 0.4;
+    height: 80%;
+    margin: 50px 0;
+}
+
+main .main-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-right-content h1 {
+    margin: 20px 0;
+}
+.main-right-content p {
+    font-size: 0.8rem;
+    color: rgb(158, 152, 152);
+    margin: 10px 0;
+}
+
+.input input{
+    border: none;
+    padding: 10px 2px;
+    border-bottom: 1px solid black;
+    font-size: medium;
+    margin: 15px 0;
+}
+
+.input input:focus {
+    outline: none;
+    border-bottom: 1.5px solid var(--accent-color);
+    transition: ease-in 0.1s;
+}
+
+.signin-button {
+    background-color: #3f7bfa;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 9999px;
+    font-size: medium;
+    margin: 20px 0;
+}
+
+.signin-button:hover {
+    cursor: pointer;
+    background-color: #376ad8;
+}
+
+.icon-remember-me {
+    height: 14px;
+    width: 14px;
+    margin-right: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.icon-remember-me:hover {
+    cursor: pointer;
+}
+
+.remember-span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.signin-options {
+    margin: 20px 0;
+}
+
+.signin-options-left, .signin-options-right {
+    display: inline-block;
+    margin-right: 5px;
+    height: 15px;
+}
+
+.signin-options-right a {
+    text-decoration: none;
+    font-size: 12px;
+}
